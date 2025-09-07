@@ -21,7 +21,7 @@ def update_label():
     if remaining > 0:
         label.config(text=f"Осталось: {remaining} сек.")
         remaining -= 1
-        timer_id = root.after(1000, update_label)  # обновляем каждую секунду
+        timer_id = root.after(1000, update_label)
     else:
         label.config(text="Выполняется...")
         if action_type == "shutdown":
